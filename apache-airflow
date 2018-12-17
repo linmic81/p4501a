@@ -1,0 +1,285 @@
+[root@blackhp ~]# set SLUGIFY_USES_TEXT_UNIDECODE=yes pip3.6 install --no-cache-dir apache-airflow
+[root@blackhp ~]# export SLUGIFY_USES_TEXT_UNIDECODE=yes pip3.6 install --no-cache-dir apache-airflow
+-bash: export: `pip3.6': not a valid identifier
+-bash: export: `--no-cache-dir': not a valid identifier
+-bash: export: `apache-airflow': not a valid identifier
+[root@blackhp ~]# export SLUGIFY_USES_TEXT_UNIDECODE=yes;pip3.6 install --no-cache-dir apache-airflow
+Collecting apache-airflow
+  Downloading https://files.pythonhosted.org/packages/02/4c/44af9c88308fc07322c42a19a8b8a692a2ffae9f9100ab46339981621b1e/apache-airflow-1.10.1.tar.gz (4.3MB)
+    100% |████████████████████████████████| 4.3MB 3.3MB/s 
+Collecting alembic<0.9,>=0.8.3 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/f0/7d/7fcda63887d9726e0145e98802baf374ec8cf889325e469194cd7926c98e/alembic-0.8.10.tar.gz (976kB)
+    100% |████████████████████████████████| 983kB 2.5MB/s 
+Collecting bleach~=2.1.3 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/94/aa/0f7ce53f8688bb9f80c0cffacc3964ddfe08321c509c0bfe5062848951f9/bleach-2.1.4-py2.py3-none-any.whl
+Collecting configparser<3.6.0,>=3.5.0 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/7c/69/c2ce7e91c89dc073eb1aa74c0621c3eefbffe8216b3f9af9d3885265c01c/configparser-3.5.0.tar.gz
+Collecting croniter<0.4,>=0.3.17 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/ba/34/2d21bb4ff3866264223c0fe9fbd48cb6042652e2a126308296de422799dd/croniter-0.3.26-py2.py3-none-any.whl
+Collecting dill<0.3,>=0.2.2 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/6f/78/8b96476f4ae426db71c6e86a8e6a81407f015b34547e442291cd397b18f3/dill-0.2.8.2.tar.gz (150kB)
+    100% |████████████████████████████████| 153kB 658kB/s 
+Collecting flask<0.13,>=0.12.4 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/2e/48/f1936dadac2326b3d73f2fe0a964a87d16be16eb9d7fc56f09c1bea3d17c/Flask-0.12.4-py2.py3-none-any.whl (81kB)
+    100% |████████████████████████████████| 81kB 3.0MB/s 
+Collecting flask-appbuilder<2.0.0,>=1.12 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/2c/e8/56ae02bfbb85bbaea436fc2e8850ebdc11df80ff2acfe0edb506e2fa9cad/Flask-AppBuilder-1.12.2.tar.gz (2.3MB)
+    100% |████████████████████████████████| 2.3MB 3.5MB/s 
+Collecting flask-admin==1.4.1 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/39/65/eb6238c40cd9ec20279969ef9ee7ac412fc7c9a6681965bcd58a63eeac2b/Flask-Admin-1.4.1.tar.gz (922kB)
+    100% |████████████████████████████████| 931kB 3.6MB/s 
+Collecting flask-caching<1.4.0,>=1.3.3 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/88/f1/7bbd68a4d79eb53c33863a17926f14268749b897c8a77ab589f2e9117d47/Flask_Caching-1.3.3-py2.py3-none-any.whl
+Collecting flask-login<0.5,>=0.3 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/c1/ff/bd9a4d2d81bf0c07d9e53e8cd3d675c56553719bbefd372df69bf1b3c1e4/Flask-Login-0.4.1.tar.gz
+Collecting flask-swagger==0.2.13 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/68/97/4e31ac3dc4a44a4b7487eab8404a68c871b57a15811e189862d0bf0c5b55/flask-swagger-0.2.13.tar.gz
+Collecting flask-wtf<0.15,>=0.14.2 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/60/3a/58c629472d10539ae5167dc7c1fecfa95dd7d0b7864623931e3776438a24/Flask_WTF-0.14.2-py2.py3-none-any.whl
+Collecting funcsigs==1.0.0 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/09/8d/17528625d12ca90651dd1f7958fd0d32b23b15f2197023372669fd683321/funcsigs-1.0.0-py2.py3-none-any.whl
+Collecting future<0.17,>=0.16.0 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/00/2b/8d082ddfed935f3608cc61140df6dcbf0edea1bc3ab52fb6c29ae3e81e85/future-0.16.0.tar.gz (824kB)
+    100% |████████████████████████████████| 829kB 6.8MB/s 
+Collecting gitpython>=2.0.2 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/fe/e5/fafe827507644c32d6dc553a1c435cdf882e0c28918a5bab29f7fbebfb70/GitPython-2.1.11-py2.py3-none-any.whl (448kB)
+    100% |████████████████████████████████| 450kB 3.7MB/s 
+Collecting gunicorn<20.0,>=19.4.0 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/8c/da/b8dd8deb741bff556db53902d4706774c8e1e67265f69528c14c003644e6/gunicorn-19.9.0-py2.py3-none-any.whl (112kB)
+    100% |████████████████████████████████| 122kB 3.5MB/s 
+Collecting iso8601>=0.1.12 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/ef/57/7162609dab394d38bbc7077b7ba0a6f10fb09d8b7701ea56fa1edc0c4345/iso8601-0.1.12-py2.py3-none-any.whl
+Collecting jinja2<2.9.0,>=2.7.3 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/67/ea/92b1d9d8f2dc43302df7f5271b9500bbfc237386782343561a5f62beb306/Jinja2-2.8.1-py2.py3-none-any.whl (264kB)
+    100% |████████████████████████████████| 266kB 2.5MB/s 
+Collecting lxml>=4.0.0 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/03/a4/9eea8035fc7c7670e5eab97f34ff2ef0ddd78a491bf96df5accedb0e63f5/lxml-4.2.5-cp36-cp36m-manylinux1_x86_64.whl (5.8MB)
+    100% |████████████████████████████████| 5.8MB 4.8MB/s 
+Collecting markdown<3.0,>=2.5.2 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/6d/7d/488b90f470b96531a3f5788cf12a93332f543dbab13c423a5e7ce96a0493/Markdown-2.6.11-py2.py3-none-any.whl (78kB)
+    100% |████████████████████████████████| 81kB 6.0MB/s 
+Collecting pandas<1.0.0,>=0.17.1 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/e1/d8/feeb346d41f181e83fba45224ab14a8d8af019b48af742e047f3845d8cff/pandas-0.23.4-cp36-cp36m-manylinux1_x86_64.whl (8.9MB)
+    100% |████████████████████████████████| 8.9MB 2.4MB/s 
+Collecting pendulum==1.4.4 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/30/47/02f04abed54918d2a3f1da602a8254247670b2e1a99b4b1f02734a27e71e/pendulum-1.4.4-cp36-cp36m-manylinux1_x86_64.whl (123kB)
+    100% |████████████████████████████████| 133kB 2.5MB/s 
+Collecting psutil<5.0.0,>=4.2.0 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/6c/49/0f784a247868e167389f6ac76b8699b2f3d6f4e8e85685dfec43e58d1ed1/psutil-4.4.2.tar.gz (1.8MB)
+    100% |████████████████████████████████| 1.8MB 6.6MB/s 
+Collecting pygments<3.0,>=2.0.1 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/13/e5/6d710c9cf96c31ac82657bcfb441df328b22df8564d58d0c4cd62612674c/Pygments-2.3.1-py2.py3-none-any.whl (849kB)
+    100% |████████████████████████████████| 849kB 3.6MB/s 
+Collecting python-daemon<2.2,>=2.1.1 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/f4/59/816004688f8e8602526553cd96226f34657ce4a86daa2240c3eebb0568a3/python_daemon-2.1.2-py2.py3-none-any.whl
+Collecting python-dateutil<3,>=2.3 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/74/68/d87d9b36af36f44254a8d512cbfc48369103a3b9e474be9bdfe536abfc45/python_dateutil-2.7.5-py2.py3-none-any.whl (225kB)
+    100% |████████████████████████████████| 235kB 3.6MB/s 
+Collecting python-nvd3==0.15.0 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/0b/aa/97165daa6e319409c5c2582e62736a7353bda3c90d90fdcb0b11e116dd2d/python-nvd3-0.15.0.tar.gz
+Collecting requests<3,>=2.5.1 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/7d/e3/20f3d364d6c8e5d2353c72a67778eb189176f08e873c9900e10c0287b84b/requests-2.21.0-py2.py3-none-any.whl (57kB)
+    100% |████████████████████████████████| 61kB 4.7MB/s 
+Collecting setproctitle<2,>=1.1.8 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/5a/0d/dc0d2234aacba6cf1a729964383e3452c52096dc695581248b548786f2b3/setproctitle-1.1.10.tar.gz
+Collecting sqlalchemy<1.2.0,>=1.1.15 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/cc/4d/96d93ff77cd67aca7618e402191eee3490d8f5f245d6ab7622d35fe504f4/SQLAlchemy-1.1.18.tar.gz (5.3MB)
+    100% |████████████████████████████████| 5.3MB 3.5MB/s 
+Collecting tabulate<=0.8.2,>=0.7.5 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/12/c2/11d6845db5edf1295bc08b2f488cf5937806586afe42936c3f34c097ebdc/tabulate-0.8.2.tar.gz (45kB)
+    100% |████████████████████████████████| 51kB 1.8MB/s 
+Collecting tenacity==4.8.0 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/fc/e9/5499018e0d420f8d03a215c310ee7bc6e1a7e84adaa63f6ea208e864bdb6/tenacity-4.8.0-py2.py3-none-any.whl
+Collecting thrift>=0.9.2 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/c6/b4/510617906f8e0c5660e7d96fbc5585113f83ad547a3989b80297ac72a74c/thrift-0.11.0.tar.gz (52kB)
+    100% |████████████████████████████████| 61kB 4.7MB/s 
+Collecting tzlocal>=1.4 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/cb/89/e3687d3ed99bc882793f82634e9824e62499fdfdc4b1ae39e211c5b05017/tzlocal-1.5.1.tar.gz
+Collecting unicodecsv>=0.14.1 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/6f/a4/691ab63b17505a26096608cc309960b5a6bdf39e4ba1a793d5f9b1a53270/unicodecsv-0.14.1.tar.gz
+Collecting werkzeug<0.15.0,>=0.14.1 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/20/c4/12e3e56473e52375aa29c4764e70d1b8f3efa6682bef8d0aae04fe335243/Werkzeug-0.14.1-py2.py3-none-any.whl (322kB)
+    100% |████████████████████████████████| 327kB 3.7MB/s 
+Collecting zope.deprecation<5.0,>=4.0 (from apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/f9/26/b935bbf9d27e898b87d80e7873a0200cebf239253d0afe7a59f82fe90fff/zope.deprecation-4.4.0-py2.py3-none-any.whl
+Collecting Mako (from alembic<0.9,>=0.8.3->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/eb/f3/67579bb486517c0d49547f9697e36582cd19dafb5df9e687ed8e22de57fa/Mako-1.0.7.tar.gz (564kB)
+    100% |████████████████████████████████| 573kB 6.8MB/s 
+Collecting python-editor>=0.3 (from alembic<0.9,>=0.8.3->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/65/1e/adf6e000ea5dc909aa420352d6ba37f16434c8a3c2fa030445411a1ed545/python-editor-1.0.3.tar.gz
+Collecting six (from bleach~=2.1.3->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/73/fb/00a976f728d0d1fecfe898238ce23f502a721c0ac0ecfedb80e0d88c64e9/six-1.12.0-py2.py3-none-any.whl
+Collecting html5lib!=1.0b1,!=1.0b2,!=1.0b3,!=1.0b4,!=1.0b5,!=1.0b6,!=1.0b7,!=1.0b8,>=0.99999999pre (from bleach~=2.1.3->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/a5/62/bbd2be0e7943ec8504b517e62bab011b4946e1258842bc159e5dfde15b96/html5lib-1.0.1-py2.py3-none-any.whl (117kB)
+    100% |████████████████████████████████| 122kB 3.8MB/s 
+Collecting itsdangerous>=0.21 (from flask<0.13,>=0.12.4->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/76/ae/44b03b253d6fade317f32c24d100b3b35c2239807046a4c953c7b89fa49e/itsdangerous-1.1.0-py2.py3-none-any.whl
+Collecting click>=2.0 (from flask<0.13,>=0.12.4->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl (81kB)
+    100% |████████████████████████████████| 81kB 4.3MB/s 
+Collecting colorama<1,>=0.3.9 (from flask-appbuilder<2.0.0,>=1.12->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/4f/a6/728666f39bfff1719fc94c481890b2106837da9318031f71a8424b662e12/colorama-0.4.1-py2.py3-none-any.whl
+Collecting Flask-Babel<1,>=0.11.1 (from flask-appbuilder<2.0.0,>=1.12->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/82/b0/986b29938d4e8be7deb552ebfd1ef16c311276a59bcae10dec567a5b3d20/Flask-Babel-0.12.2.tar.gz (44kB)
+    100% |████████████████████████████████| 51kB 28.6MB/s 
+Collecting Flask-OpenID<2,>=1.2.5 (from flask-appbuilder<2.0.0,>=1.12->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/d1/a2/9d1fba3287a65f81b9d1c09c4f7cb16f8ea4988b1bc97ffea0d60983338f/Flask-OpenID-1.2.5.tar.gz (43kB)
+    100% |████████████████████████████████| 51kB 23.9MB/s 
+Collecting Flask-SQLAlchemy<3,>=2.3 (from flask-appbuilder<2.0.0,>=1.12->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/a1/44/294fb7f6bf49cc7224417cd0637018db9fee0729b4fe166e43e2bbb1f1c8/Flask_SQLAlchemy-2.3.2-py2.py3-none-any.whl
+Collecting wtforms (from flask-admin==1.4.1->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/9f/c8/dac5dce9908df1d9d48ec0e26e2a250839fa36ea2c602cc4f85ccfeb5c65/WTForms-2.2.1-py2.py3-none-any.whl (166kB)
+    100% |████████████████████████████████| 174kB 6.8MB/s 
+Collecting PyYAML>=3.0 (from flask-swagger==0.2.13->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/9e/a3/1d13970c3f36777c583f136c136f804d70f500168edc1edea6daa7200769/PyYAML-3.13.tar.gz (270kB)
+    100% |████████████████████████████████| 276kB 2.4MB/s 
+Collecting ordereddict (from funcsigs==1.0.0->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/53/25/ef88e8e45db141faa9598fbf7ad0062df8f50f881a36ed6a0073e1572126/ordereddict-1.1.tar.gz
+Collecting gitdb2>=2.0.0 (from gitpython>=2.0.2->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/da/30/a407568aa8d8f25db817cf50121a958722f3fc5f87e3a6fba1f40c0633e3/gitdb2-2.0.5-py2.py3-none-any.whl (62kB)
+    100% |████████████████████████████████| 71kB 5.2MB/s 
+Collecting MarkupSafe (from jinja2<2.9.0,>=2.7.3->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/08/04/f2191b50fb7f0712f03f064b71d8b4605190f2178ba02e975a87f7b89a0d/MarkupSafe-1.1.0-cp36-cp36m-manylinux1_x86_64.whl
+Requirement already satisfied: numpy>=1.9.0 in /usr/lib64/python3.6/site-packages (from pandas<1.0.0,>=0.17.1->apache-airflow) (1.14.5)
+Collecting pytz>=2011k (from pandas<1.0.0,>=0.17.1->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/f8/0e/2365ddc010afb3d79147f1dd544e5ee24bf4ece58ab99b16fbb465ce6dc0/pytz-2018.7-py2.py3-none-any.whl (506kB)
+    100% |████████████████████████████████| 512kB 2.5MB/s 
+Collecting pytzdata>=2018.3.0.0 (from pendulum==1.4.4->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/46/8b/d7fe0c5b24870438d5ed59ceab72d537c5374d7db3cc57107e4a922b3a23/pytzdata-2018.7-py2.py3-none-any.whl (971kB)
+    100% |████████████████████████████████| 972kB 3.7MB/s 
+Requirement already satisfied: setuptools in /usr/lib/python3.6/site-packages (from python-daemon<2.2,>=2.1.1->apache-airflow) (40.6.3)
+Collecting lockfile>=0.10 (from python-daemon<2.2,>=2.1.1->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/c8/22/9460e311f340cb62d26a38c419b1381b8593b0bb6b5d1f056938b086d362/lockfile-0.12.2-py2.py3-none-any.whl
+Collecting docutils (from python-daemon<2.2,>=2.1.1->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/36/fa/08e9e6e0e3cbd1d362c3bbee8d01d0aedb2155c4ac112b19ef3cae8eed8d/docutils-0.14-py3-none-any.whl (543kB)
+    100% |████████████████████████████████| 552kB 3.7MB/s 
+Collecting python-slugify>=1.2.5 (from python-nvd3==0.15.0->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/00/ad/c778a6df614b6217c30fe80045b365bfa08b5dd3cb02e8b37a6d25126781/python-slugify-1.2.6.tar.gz
+Collecting urllib3<1.25,>=1.21.1 (from requests<3,>=2.5.1->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/62/00/ee1d7de624db8ba7090d1226aebefab96a2c71cd5cfa7629d6ad3f61b79e/urllib3-1.24.1-py2.py3-none-any.whl (118kB)
+    100% |████████████████████████████████| 122kB 3.8MB/s 
+Collecting idna<2.9,>=2.5 (from requests<3,>=2.5.1->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/14/2c/cd551d81dbe15200be1cf41cd03869a46fe7226e7450af7a6545bfc474c9/idna-2.8-py2.py3-none-any.whl (58kB)
+    100% |████████████████████████████████| 61kB 6.7MB/s 
+Collecting chardet<3.1.0,>=3.0.2 (from requests<3,>=2.5.1->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/bc/a9/01ffebfb562e4274b6487b4bb1ddec7ca55ec7510b22e4c51f14098443b8/chardet-3.0.4-py2.py3-none-any.whl (133kB)
+    100% |████████████████████████████████| 143kB 3.6MB/s 
+Collecting certifi>=2017.4.17 (from requests<3,>=2.5.1->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/9f/e0/accfc1b56b57e9750eba272e24c4dddeac86852c2bebd1236674d7887e8a/certifi-2018.11.29-py2.py3-none-any.whl (154kB)
+    100% |████████████████████████████████| 163kB 3.7MB/s 
+Collecting monotonic>=0.6 (from tenacity==4.8.0->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/ac/aa/063eca6a416f397bd99552c534c6d11d57f58f2e94c14780f3bbf818c4cf/monotonic-1.5-py2.py3-none-any.whl
+Collecting webencodings (from html5lib!=1.0b1,!=1.0b2,!=1.0b3,!=1.0b4,!=1.0b5,!=1.0b6,!=1.0b7,!=1.0b8,>=0.99999999pre->bleach~=2.1.3->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/f4/24/2a3e3df732393fed8b3ebf2ec078f05546de641fe1b667ee316ec1dcf3b7/webencodings-0.5.1-py2.py3-none-any.whl
+Collecting Babel>=2.3 (from Flask-Babel<1,>=0.11.1->flask-appbuilder<2.0.0,>=1.12->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/b8/ad/c6f60602d3ee3d92fbed87675b6fb6a6f9a38c223343ababdb44ba201f10/Babel-2.6.0-py2.py3-none-any.whl (8.1MB)
+    100% |████████████████████████████████| 8.1MB 3.6MB/s 
+Collecting python3-openid>=2.0 (from Flask-OpenID<2,>=1.2.5->flask-appbuilder<2.0.0,>=1.12->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/bd/de/52c5699f52dcee3037db587196dcaf63ffedf5fbeba3183afe9b21a3a89f/python3_openid-3.1.0-py3-none-any.whl (130kB)
+    100% |████████████████████████████████| 133kB 6.4MB/s 
+Collecting smmap2>=2.0.0 (from gitdb2>=2.0.0->gitpython>=2.0.2->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/55/d2/866d45e3a121ee15a1dc013824d58072fd5c7799c9c34d01378eb262ca8f/smmap2-2.0.5-py2.py3-none-any.whl
+Collecting text-unidecode>=1.2 (from python-slugify>=1.2.5->python-nvd3==0.15.0->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/79/42/d717cc2b4520fb09e45b344b1b0b4e81aa672001dd128c180fabc655c341/text_unidecode-1.2-py2.py3-none-any.whl (77kB)
+    100% |████████████████████████████████| 81kB 6.6MB/s 
+Collecting defusedxml (from python3-openid>=2.0->Flask-OpenID<2,>=1.2.5->flask-appbuilder<2.0.0,>=1.12->apache-airflow)
+  Downloading https://files.pythonhosted.org/packages/87/1c/17f3e3935a913dfe2a5ca85fa5ccbef366bfd82eb318b1f75dadbf0affca/defusedxml-0.5.0-py2.py3-none-any.whl
+Installing collected packages: sqlalchemy, MarkupSafe, Mako, python-editor, alembic, six, webencodings, html5lib, bleach, configparser, python-dateutil, croniter, dill, itsdangerous, click, jinja2, werkzeug, flask, colorama, pytz, Babel, Flask-Babel, flask-login, defusedxml, python3-openid, Flask-OpenID, Flask-SQLAlchemy, wtforms, flask-wtf, flask-appbuilder, flask-admin, flask-caching, PyYAML, flask-swagger, ordereddict, funcsigs, future, smmap2, gitdb2, gitpython, gunicorn, iso8601, lxml, markdown, pandas, tzlocal, pytzdata, pendulum, psutil, pygments, lockfile, docutils, python-daemon, text-unidecode, python-slugify, python-nvd3, urllib3, idna, chardet, certifi, requests, setproctitle, tabulate, monotonic, tenacity, thrift, unicodecsv, zope.deprecation, apache-airflow
+  Running setup.py install for sqlalchemy ... done
+  Running setup.py install for Mako ... done
+  Running setup.py install for python-editor ... done
+  Running setup.py install for alembic ... done
+  Running setup.py install for configparser ... done
+  Running setup.py install for dill ... done
+  Running setup.py install for Flask-Babel ... done
+  Running setup.py install for flask-login ... done
+  Running setup.py install for Flask-OpenID ... done
+  Running setup.py install for flask-appbuilder ... done
+  Running setup.py install for flask-admin ... done
+  Running setup.py install for PyYAML ... done
+  Running setup.py install for flask-swagger ... done
+  Running setup.py install for ordereddict ... done
+  Running setup.py install for future ... done
+  Running setup.py install for tzlocal ... done
+  Running setup.py install for psutil ... done
+  Running setup.py install for python-slugify ... done
+  Running setup.py install for python-nvd3 ... done
+  Running setup.py install for setproctitle ... done
+  Running setup.py install for tabulate ... done
+  Running setup.py install for thrift ... done
+  Running setup.py install for unicodecsv ... done
+  Running setup.py install for apache-airflow ... done
+Successfully installed Babel-2.6.0 Flask-Babel-0.12.2 Flask-OpenID-1.2.5 Flask-SQLAlchemy-2.3.2 Mako-1.0.7 MarkupSafe-1.1.0 PyYAML-3.13 alembic-0.8.10 apache-airflow-1.10.1 bleach-2.1.4 certifi-2018.11.29 chardet-3.0.4 click-7.0 colorama-0.4.1 configparser-3.5.0 croniter-0.3.26 defusedxml-0.5.0 dill-0.2.8.2 docutils-0.14 flask-0.12.4 flask-admin-1.4.1 flask-appbuilder-1.12.2 flask-caching-1.3.3 flask-login-0.4.1 flask-swagger-0.2.13 flask-wtf-0.14.2 funcsigs-1.0.0 future-0.16.0 gitdb2-2.0.5 gitpython-2.1.11 gunicorn-19.9.0 html5lib-1.0.1 idna-2.8 iso8601-0.1.12 itsdangerous-1.1.0 jinja2-2.8.1 lockfile-0.12.2 lxml-4.2.5 markdown-2.6.11 monotonic-1.5 ordereddict-1.1 pandas-0.23.4 pendulum-1.4.4 psutil-4.4.2 pygments-2.3.1 python-daemon-2.1.2 python-dateutil-2.7.5 python-editor-1.0.3 python-nvd3-0.15.0 python-slugify-1.2.6 python3-openid-3.1.0 pytz-2018.7 pytzdata-2018.7 requests-2.21.0 setproctitle-1.1.10 six-1.12.0 smmap2-2.0.5 sqlalchemy-1.1.18 tabulate-0.8.2 tenacity-4.8.0 text-unidecode-1.2 thrift-0.11.0 tzlocal-1.5.1 unicodecsv-0.14.1 urllib3-1.24.1 webencodings-0.5.1 werkzeug-0.14.1 wtforms-2.2.1 zope.deprecation-4.4.0
+[root@blackhp ~]# pip3.6 freeze
+alembic==0.8.10
+apache-airflow==1.10.1
+Babel==2.6.0
+bleach==2.1.4
+certifi==2018.11.29
+chardet==3.0.4
+Click==7.0
+colorama==0.4.1
+configparser==3.5.0
+croniter==0.3.26
+defusedxml==0.5.0
+dill==0.2.8.2
+docutils==0.14
+Flask==0.12.4
+Flask-Admin==1.4.1
+Flask-AppBuilder==1.12.2
+Flask-Babel==0.12.2
+Flask-Caching==1.3.3
+Flask-Login==0.4.1
+Flask-OpenID==1.2.5
+Flask-SQLAlchemy==2.3.2
+flask-swagger==0.2.13
+Flask-WTF==0.14.2
+funcsigs==1.0.0
+future==0.16.0
+gitdb2==2.0.5
+GitPython==2.1.11
+gunicorn==19.9.0
+html5lib==1.0.1
+idna==2.8
+iso8601==0.1.12
+itsdangerous==1.1.0
+Jinja2==2.8.1
+lockfile==0.12.2
+lxml==4.2.5
+Mako==1.0.7
+Markdown==2.6.11
+MarkupSafe==1.1.0
+monotonic==1.5
+numpy==1.14.5
+ordereddict==1.1
+pandas==0.23.4
+pendulum==1.4.4
+progressbar33==2.4
+psutil==4.4.2
+Pygments==2.3.1
+python-daemon==2.1.2
+python-dateutil==2.7.5
+python-editor==1.0.3
+python-nvd3==0.15.0
+python-slugify==1.2.6
+python3-openid==3.1.0
+pytz==2018.7
+pytzdata==2018.7
+PyYAML==3.13
+requests==2.21.0
+setproctitle==1.1.10
+six==1.12.0
+smmap2==2.0.5
+SQLAlchemy==1.1.18
+tabulate==0.8.2
+tenacity==4.8.0
+text-unidecode==1.2
+thrift==0.11.0
+tzlocal==1.5.1
+unicodecsv==0.14.1
+urllib3==1.24.1
+webencodings==0.5.1
+Werkzeug==0.14.1
+WTForms==2.2.1
+zope.deprecation==4.4.0
+[root@blackhp ~]# 
