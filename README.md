@@ -7,3 +7,5 @@ https://stackoverflow.com/questions/12042724/securely-storing-passwords-for-use-
 
 https://artsmidwest.org/wp-content/uploads/2022/12/Worksheet-SMART-Goals.pdf
 https://artsmidwest.org/resource/smart-goals-for-arts-organizations/?gclid=CjwKCAiAl9efBhAkEiwA4Torikaipj8DOKUWkESKfBQgDvhw_XrBPRXOJdbM5EIN0l2IkEId3x08CBoCke0QAvD_BwE
+
+In the past year, has been responsible for crucial business deliverables and consistently achieved favorable results.
